@@ -26,7 +26,8 @@
     if (self) {
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
-        [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZ"];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
+        [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
         
         name_        = [dictionary objectForKey:@"name"];
         description_ = [dictionary objectForKey:@"description"];

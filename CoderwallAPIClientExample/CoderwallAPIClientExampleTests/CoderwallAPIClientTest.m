@@ -9,6 +9,7 @@
 #define kStubServerPort 12345
 
 #import <objc/objc-runtime.h>
+#import "NLTHTTPStubServer.h"
 #import "CoderwallAPIClientTest.h"
 #import "CoderwallAPIClient.h"
 
@@ -42,7 +43,7 @@
 - (void)testAPIClientBaseURL
 {
     NSURL *expectURL = [NSURL URLWithString:@"http://coderwall.com/"];
-    GHAssertEqualObjects(expectURL, [[CoderwallAPIClient sharedClient] baseURL], @"baseURL should equal to %@", expectURL);
+    GHAssertEqualObjects([[CoderwallAPIClient sharedClient] baseURL], expectURL, @"baseURL should equal to %@", expectURL);
 }
 
 - (void)testProfileAPISuccess
@@ -61,8 +62,20 @@
     [self prepare];
     [client profileForUsername:@"slightair"
                     completion:^(CoderwallUserProfile *profile){
+                        
                         NSString *expectUsername = @"slightair";
-                        GHAssertEqualObjects(expectUsername, profile.username, @"profile.username should equal %@", expectUsername);
+                        NSString *expectName = @"Tomohiro Moro";
+                        NSString *expectLocation = @"Tokyo";
+                        NSUInteger expectEndorsements = 3;
+                        NSDictionary *expectAccounts = [NSDictionary dictionaryWithObject:@"slightair" forKey:@"github"];
+                        NSUInteger expectNumberOfBadges = 8;
+                        
+                        GHAssertEqualStrings(profile.username, expectUsername, @"profile.username should equal to %@", expectUsername);
+                        GHAssertEqualStrings(profile.name, expectName, @"profile.name should equal to %@", expectName);
+                        GHAssertEqualStrings(profile.location, expectLocation, @"profile.location should equal to %@", expectLocation);
+                        GHAssertEquals(profile.endorsements, expectEndorsements, @"profile.endorsements should equal to %u", expectEndorsements);
+                        GHAssertEqualObjects(profile.accounts, expectAccounts, @"profile.accounts should equal to %@", expectAccounts);
+                        GHAssertEquals([profile.badges count], expectNumberOfBadges, @"profile.badges count should equal to %u", expectNumberOfBadges);
                         
                         [self notify:kGHUnitWaitStatusSuccess];
                     }

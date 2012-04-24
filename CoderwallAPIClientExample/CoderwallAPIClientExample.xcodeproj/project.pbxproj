@@ -90,6 +90,8 @@
 		571BB9A51544A8FF009D1475 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571BB9A41544A8FF009D1475 /* GHUnitIOS.framework */; };
 		57FD48431546469000A86733 /* CoderwallBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48421546469000A86733 /* CoderwallBadge.m */; };
 		57FD48441546469000A86733 /* CoderwallBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48421546469000A86733 /* CoderwallBadge.m */; };
+		57FD48481546588500A86733 /* CoderwallUserProfileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48471546588500A86733 /* CoderwallUserProfileTest.m */; };
+		57FD484B1546589D00A86733 /* CoderwallBadgeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD484A1546589D00A86733 /* CoderwallBadgeTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -216,6 +218,10 @@
 		571BB9A41544A8FF009D1475 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = Frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
 		57FD48411546469000A86733 /* CoderwallBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoderwallBadge.h; path = ../../CoderwallAPIClient/CoderwallBadge.h; sourceTree = "<group>"; };
 		57FD48421546469000A86733 /* CoderwallBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoderwallBadge.m; path = ../../CoderwallAPIClient/CoderwallBadge.m; sourceTree = "<group>"; };
+		57FD48461546588500A86733 /* CoderwallUserProfileTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoderwallUserProfileTest.h; sourceTree = "<group>"; };
+		57FD48471546588500A86733 /* CoderwallUserProfileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoderwallUserProfileTest.m; sourceTree = "<group>"; };
+		57FD48491546589D00A86733 /* CoderwallBadgeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoderwallBadgeTest.h; sourceTree = "<group>"; };
+		57FD484A1546589D00A86733 /* CoderwallBadgeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoderwallBadgeTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -485,6 +491,10 @@
 				571BB9961544A7A3009D1475 /* Supporting Files */,
 				57084DE11544D62700DBC96B /* CoderwallAPIClientTest.h */,
 				57084DE21544D62700DBC96B /* CoderwallAPIClientTest.m */,
+				57FD48461546588500A86733 /* CoderwallUserProfileTest.h */,
+				57FD48471546588500A86733 /* CoderwallUserProfileTest.m */,
+				57FD48491546589D00A86733 /* CoderwallBadgeTest.h */,
+				57FD484A1546589D00A86733 /* CoderwallBadgeTest.m */,
 			);
 			path = CoderwallAPIClientExampleTests;
 			sourceTree = "<group>";
@@ -667,6 +677,8 @@
 				57084E5E1544DF9100DBC96B /* UIImageView+AFNetworking.m in Sources */,
 				57084E631544EEE400DBC96B /* CoderwallUserProfile.m in Sources */,
 				57FD48441546469000A86733 /* CoderwallBadge.m in Sources */,
+				57FD48481546588500A86733 /* CoderwallUserProfileTest.m in Sources */,
+				57FD484B1546589D00A86733 /* CoderwallBadgeTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
