@@ -7,6 +7,7 @@
 //
 
 #import "CoderwallUserProfile.h"
+#import "CoderwallBadge.h"
 
 @implementation CoderwallUserProfile
 
@@ -31,7 +32,12 @@
         location_     = [dictionary objectForKey:@"location"];
         endorsements_ = [[dictionary objectForKey:@"endorsements"] unsignedIntegerValue];
         accounts_     = [dictionary objectForKey:@"accounts"];
-        badges_       = [dictionary objectForKey:@"name"];
+        
+        NSMutableArray *badges = [NSMutableArray array];
+        for (NSDictionary *badgeInfo in [dictionary objectForKey:@"badges"]) {
+            [badges addObject:[CoderwallBadge badgeWithDictionary:badgeInfo]];
+        }
+        badges_ = [NSArray arrayWithArray:badges];
     }
     return self;
 }

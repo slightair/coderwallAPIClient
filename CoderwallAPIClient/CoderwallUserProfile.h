@@ -11,6 +11,7 @@
 @interface CoderwallUserProfile : NSObject
 
 + (id)profileWithDictionary:(NSDictionary *)dictionary;
+- (id)initWithDictionary:(NSDictionary *)dictionary;
 
 @property (nonatomic, readonly) NSString *username;
 @property (nonatomic, readonly) NSString *name;
