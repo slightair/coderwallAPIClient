@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 #import "CoderwallUserProfile.h"
+#import "CoderwallBadge.h"
 
 typedef void (^CoderwallAPIProfileSuccessBlock)(CoderwallUserProfile *profile);
 typedef void (^CoderwallAPIBasicFailureBlock)(NSError *error);

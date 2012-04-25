@@ -13,9 +13,9 @@
 + (id)badgeWithDictionary:(NSDictionary *)dictionary;
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
-@property (nonatomic, readonly) NSString *name;
-@property (nonatomic, readonly) NSString *description;
-@property (nonatomic, readonly) NSDate *created;
-@property (nonatomic, readonly) NSURL *badge;
+@property (nonatomic, readonly, strong) NSString *name;
+@property (nonatomic, readonly, strong) NSString *description;
+@property (nonatomic, readonly, strong) NSDate *created;
+@property (nonatomic, readonly, strong) NSURL *badge;
 
 @end

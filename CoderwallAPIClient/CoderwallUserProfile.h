@@ -13,11 +13,11 @@
 + (id)profileWithDictionary:(NSDictionary *)dictionary;
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 
-@property (nonatomic, readonly) NSString *username;
-@property (nonatomic, readonly) NSString *name;
-@property (nonatomic, readonly) NSString *location;
+@property (nonatomic, readonly, strong) NSString *username;
+@property (nonatomic, readonly, strong) NSString *name;
+@property (nonatomic, readonly, strong) NSString *location;
 @property (nonatomic, readonly) NSUInteger endorsements;
-@property (nonatomic, readonly) NSDictionary *accounts;
-@property (nonatomic, readonly) NSArray *badges;
+@property (nonatomic, readonly, strong) NSDictionary *accounts;
+@property (nonatomic, readonly, strong) NSArray *badges;
 
 @end

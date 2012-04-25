@@ -8,6 +8,15 @@
 
 #import "CoderwallBadge.h"
 
+@interface CoderwallBadge ()
+
+@property (nonatomic, readwrite, strong) NSString *name;
+@property (nonatomic, readwrite, strong) NSString *description;
+@property (nonatomic, readwrite, strong) NSDate *created;
+@property (nonatomic, readwrite, strong) NSURL *badge;
+
+@end
+
 @implementation CoderwallBadge
 
 @synthesize name = name_;
@@ -29,10 +38,10 @@
         [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
         [dateFormatter setTimeZone:[NSTimeZone timeZoneWithName:@"UTC"]];
         
-        name_        = [dictionary objectForKey:@"name"];
-        description_ = [dictionary objectForKey:@"description"];
-        created_     = [dateFormatter dateFromString:[dictionary objectForKey:@"created"]];
-        badge_       = [NSURL URLWithString:[dictionary objectForKey:@"badge"]];
+        self.name        = [dictionary objectForKey:@"name"];
+        self.description = [dictionary objectForKey:@"description"];
+        self.created     = [dateFormatter dateFromString:[dictionary objectForKey:@"created"]];
+        self.badge       = [NSURL URLWithString:[dictionary objectForKey:@"badge"]];
     }
     return self;
 }

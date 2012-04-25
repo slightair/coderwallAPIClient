@@ -69,19 +69,8 @@
 		571BB95C1544A6D1009D1475 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571BB95B1544A6D1009D1475 /* UIKit.framework */; };
 		571BB95E1544A6D1009D1475 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571BB95D1544A6D1009D1475 /* Foundation.framework */; };
 		571BB9601544A6D1009D1475 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571BB95F1544A6D1009D1475 /* CoreGraphics.framework */; };
-		571BB9661544A6D1009D1475 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 571BB9641544A6D1009D1475 /* InfoPlist.strings */; };
 		571BB9681544A6D1009D1475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 571BB9671544A6D1009D1475 /* main.m */; };
 		571BB96C1544A6D1009D1475 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 571BB96B1544A6D1009D1475 /* CCAppDelegate.m */; };
-		571BB96F1544A6D1009D1475 /* CCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571BB96E1544A6D1009D1475 /* CCFirstViewController.m */; };
-		571BB9711544A6D1009D1475 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 571BB9701544A6D1009D1475 /* first.png */; };
-		571BB9731544A6D1009D1475 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 571BB9721544A6D1009D1475 /* first@2x.png */; };
-		571BB9761544A6D1009D1475 /* CCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571BB9751544A6D1009D1475 /* CCSecondViewController.m */; };
-		571BB9781544A6D1009D1475 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 571BB9771544A6D1009D1475 /* second.png */; };
-		571BB97A1544A6D1009D1475 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 571BB9791544A6D1009D1475 /* second@2x.png */; };
-		571BB97D1544A6D1009D1475 /* CCFirstViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 571BB97B1544A6D1009D1475 /* CCFirstViewController_iPhone.xib */; };
-		571BB9801544A6D1009D1475 /* CCFirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 571BB97E1544A6D1009D1475 /* CCFirstViewController_iPad.xib */; };
-		571BB9831544A6D1009D1475 /* CCSecondViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 571BB9811544A6D1009D1475 /* CCSecondViewController_iPhone.xib */; };
-		571BB9861544A6D1009D1475 /* CCSecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 571BB9841544A6D1009D1475 /* CCSecondViewController_iPad.xib */; };
 		571BB9921544A7A3009D1475 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571BB95B1544A6D1009D1475 /* UIKit.framework */; };
 		571BB9931544A7A3009D1475 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571BB95D1544A6D1009D1475 /* Foundation.framework */; };
 		571BB9941544A7A3009D1475 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571BB95F1544A6D1009D1475 /* CoreGraphics.framework */; };
@@ -92,6 +81,10 @@
 		57FD48441546469000A86733 /* CoderwallBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48421546469000A86733 /* CoderwallBadge.m */; };
 		57FD48481546588500A86733 /* CoderwallUserProfileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48471546588500A86733 /* CoderwallUserProfileTest.m */; };
 		57FD484B1546589D00A86733 /* CoderwallBadgeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD484A1546589D00A86733 /* CoderwallBadgeTest.m */; };
+		57FD484D1547B62B00A86733 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FD484C1547B62B00A86733 /* Storyboard.storyboard */; };
+		57FD48AB1547BDDF00A86733 /* CCBadgeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48AA1547BDDF00A86733 /* CCBadgeListViewController.m */; };
+		57FD48AD154869B200A86733 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FD48AC154869B200A86733 /* placeholder.png */; };
+		57FD48AE154869B200A86733 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FD48AC154869B200A86733 /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,23 +186,10 @@
 		571BB95D1544A6D1009D1475 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		571BB95F1544A6D1009D1475 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		571BB9631544A6D1009D1475 /* CoderwallAPIClientExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoderwallAPIClientExample-Info.plist"; sourceTree = "<group>"; };
-		571BB9651544A6D1009D1475 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		571BB9671544A6D1009D1475 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		571BB9691544A6D1009D1475 /* CoderwallAPIClientExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoderwallAPIClientExample-Prefix.pch"; sourceTree = "<group>"; };
 		571BB96A1544A6D1009D1475 /* CCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
 		571BB96B1544A6D1009D1475 /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
-		571BB96D1544A6D1009D1475 /* CCFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCFirstViewController.h; sourceTree = "<group>"; };
-		571BB96E1544A6D1009D1475 /* CCFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCFirstViewController.m; sourceTree = "<group>"; };
-		571BB9701544A6D1009D1475 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		571BB9721544A6D1009D1475 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		571BB9741544A6D1009D1475 /* CCSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCSecondViewController.h; sourceTree = "<group>"; };
-		571BB9751544A6D1009D1475 /* CCSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSecondViewController.m; sourceTree = "<group>"; };
-		571BB9771544A6D1009D1475 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		571BB9791544A6D1009D1475 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		571BB97C1544A6D1009D1475 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CCFirstViewController_iPhone.xib; sourceTree = "<group>"; };
-		571BB97F1544A6D1009D1475 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CCFirstViewController_iPad.xib; sourceTree = "<group>"; };
-		571BB9821544A6D1009D1475 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CCSecondViewController_iPhone.xib; sourceTree = "<group>"; };
-		571BB9851544A6D1009D1475 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CCSecondViewController_iPad.xib; sourceTree = "<group>"; };
 		571BB9901544A7A3009D1475 /* CoderwallAPIClientExampleTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoderwallAPIClientExampleTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		571BB9971544A7A3009D1475 /* CoderwallAPIClientExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoderwallAPIClientExampleTests-Info.plist"; sourceTree = "<group>"; };
 		571BB9991544A7A3009D1475 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -222,6 +202,10 @@
 		57FD48471546588500A86733 /* CoderwallUserProfileTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoderwallUserProfileTest.m; sourceTree = "<group>"; };
 		57FD48491546589D00A86733 /* CoderwallBadgeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoderwallBadgeTest.h; sourceTree = "<group>"; };
 		57FD484A1546589D00A86733 /* CoderwallBadgeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoderwallBadgeTest.m; sourceTree = "<group>"; };
+		57FD484C1547B62B00A86733 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		57FD48A91547BDDE00A86733 /* CCBadgeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBadgeListViewController.h; sourceTree = "<group>"; };
+		57FD48AA1547BDDF00A86733 /* CCBadgeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBadgeListViewController.m; sourceTree = "<group>"; };
+		57FD48AC154869B200A86733 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,18 +434,8 @@
 			children = (
 				571BB96A1544A6D1009D1475 /* CCAppDelegate.h */,
 				571BB96B1544A6D1009D1475 /* CCAppDelegate.m */,
-				571BB96D1544A6D1009D1475 /* CCFirstViewController.h */,
-				571BB96E1544A6D1009D1475 /* CCFirstViewController.m */,
-				571BB9701544A6D1009D1475 /* first.png */,
-				571BB9721544A6D1009D1475 /* first@2x.png */,
-				571BB9741544A6D1009D1475 /* CCSecondViewController.h */,
-				571BB9751544A6D1009D1475 /* CCSecondViewController.m */,
-				571BB9771544A6D1009D1475 /* second.png */,
-				571BB9791544A6D1009D1475 /* second@2x.png */,
-				571BB97B1544A6D1009D1475 /* CCFirstViewController_iPhone.xib */,
-				571BB97E1544A6D1009D1475 /* CCFirstViewController_iPad.xib */,
-				571BB9811544A6D1009D1475 /* CCSecondViewController_iPhone.xib */,
-				571BB9841544A6D1009D1475 /* CCSecondViewController_iPad.xib */,
+				57FD48A91547BDDE00A86733 /* CCBadgeListViewController.h */,
+				57FD48AA1547BDDF00A86733 /* CCBadgeListViewController.m */,
 				571BB9621544A6D1009D1475 /* Supporting Files */,
 				57084DC51544C01400DBC96B /* CoderwallAPIClient.h */,
 				57084DC61544C01400DBC96B /* CoderwallAPIClient.m */,
@@ -469,6 +443,7 @@
 				57084E611544EEE400DBC96B /* CoderwallUserProfile.m */,
 				57FD48411546469000A86733 /* CoderwallBadge.h */,
 				57FD48421546469000A86733 /* CoderwallBadge.m */,
+				57FD48AC154869B200A86733 /* placeholder.png */,
 			);
 			path = CoderwallAPIClientExample;
 			sourceTree = "<group>";
@@ -477,9 +452,9 @@
 			isa = PBXGroup;
 			children = (
 				571BB9631544A6D1009D1475 /* CoderwallAPIClientExample-Info.plist */,
-				571BB9641544A6D1009D1475 /* InfoPlist.strings */,
 				571BB9671544A6D1009D1475 /* main.m */,
 				571BB9691544A6D1009D1475 /* CoderwallAPIClientExample-Prefix.pch */,
+				57FD484C1547B62B00A86733 /* Storyboard.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -579,15 +554,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				571BB9661544A6D1009D1475 /* InfoPlist.strings in Resources */,
-				571BB9711544A6D1009D1475 /* first.png in Resources */,
-				571BB9731544A6D1009D1475 /* first@2x.png in Resources */,
-				571BB9781544A6D1009D1475 /* second.png in Resources */,
-				571BB97A1544A6D1009D1475 /* second@2x.png in Resources */,
-				571BB97D1544A6D1009D1475 /* CCFirstViewController_iPhone.xib in Resources */,
-				571BB9801544A6D1009D1475 /* CCFirstViewController_iPad.xib in Resources */,
-				571BB9831544A6D1009D1475 /* CCSecondViewController_iPhone.xib in Resources */,
-				571BB9861544A6D1009D1475 /* CCSecondViewController_iPad.xib in Resources */,
+				57FD484D1547B62B00A86733 /* Storyboard.storyboard in Resources */,
+				57FD48AD154869B200A86733 /* placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +568,7 @@
 				57084E281544D92E00DBC96B /* About.txt in Resources */,
 				57084E301544D92E00DBC96B /* README.txt in Resources */,
 				57084E6615458E8700DBC96B /* slightair.json in Resources */,
+				57FD48AE154869B200A86733 /* placeholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,8 +581,6 @@
 			files = (
 				571BB9681544A6D1009D1475 /* main.m in Sources */,
 				571BB96C1544A6D1009D1475 /* CCAppDelegate.m in Sources */,
-				571BB96F1544A6D1009D1475 /* CCFirstViewController.m in Sources */,
-				571BB9761544A6D1009D1475 /* CCSecondViewController.m in Sources */,
 				57084DC71544C01400DBC96B /* CoderwallAPIClient.m in Sources */,
 				57084E4B1544DF9100DBC96B /* AFHTTPClient.m in Sources */,
 				57084E4D1544DF9100DBC96B /* AFHTTPRequestOperation.m in Sources */,
@@ -627,6 +594,7 @@
 				57084E5D1544DF9100DBC96B /* UIImageView+AFNetworking.m in Sources */,
 				57084E621544EEE400DBC96B /* CoderwallUserProfile.m in Sources */,
 				57FD48431546469000A86733 /* CoderwallBadge.m in Sources */,
+				57FD48AB1547BDDF00A86733 /* CCBadgeListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,46 +653,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		571BB9641544A6D1009D1475 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				571BB9651544A6D1009D1475 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		571BB97B1544A6D1009D1475 /* CCFirstViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				571BB97C1544A6D1009D1475 /* en */,
-			);
-			name = CCFirstViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		571BB97E1544A6D1009D1475 /* CCFirstViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				571BB97F1544A6D1009D1475 /* en */,
-			);
-			name = CCFirstViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-		571BB9811544A6D1009D1475 /* CCSecondViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				571BB9821544A6D1009D1475 /* en */,
-			);
-			name = CCSecondViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		571BB9841544A6D1009D1475 /* CCSecondViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				571BB9851544A6D1009D1475 /* en */,
-			);
-			name = CCSecondViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
 		571BB9981544A7A3009D1475 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
