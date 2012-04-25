@@ -17,26 +17,20 @@
 @synthesize window = _window;
 @synthesize tabBarController = _tabBarController;
 
-- (void)dealloc
-{
-    [_window release];
-    [_tabBarController release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     UIViewController *viewController1, *viewController2;
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        viewController1 = [[[CCFirstViewController alloc] initWithNibName:@"CCFirstViewController_iPhone" bundle:nil] autorelease];
-        viewController2 = [[[CCSecondViewController alloc] initWithNibName:@"CCSecondViewController_iPhone" bundle:nil] autorelease];
+        viewController1 = [[CCFirstViewController alloc] initWithNibName:@"CCFirstViewController_iPhone" bundle:nil];
+        viewController2 = [[CCSecondViewController alloc] initWithNibName:@"CCSecondViewController_iPhone" bundle:nil];
     } else {
-        viewController1 = [[[CCFirstViewController alloc] initWithNibName:@"CCFirstViewController_iPad" bundle:nil] autorelease];
-        viewController2 = [[[CCSecondViewController alloc] initWithNibName:@"CCSecondViewController_iPad" bundle:nil] autorelease];
+        viewController1 = [[CCFirstViewController alloc] initWithNibName:@"CCFirstViewController_iPad" bundle:nil];
+        viewController2 = [[CCSecondViewController alloc] initWithNibName:@"CCSecondViewController_iPad" bundle:nil];
     }
-    self.tabBarController = [[[UITabBarController alloc] init] autorelease];
+    self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:viewController1, viewController2, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57084DC71544C01400DBC96B /* CoderwallAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084DC61544C01400DBC96B /* CoderwallAPIClient.m */; };
+		57084DC71544C01400DBC96B /* CoderwallAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084DC61544C01400DBC96B /* CoderwallAPIClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084DC81544C01400DBC96B /* CoderwallAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084DC61544C01400DBC96B /* CoderwallAPIClient.m */; };
 		57084DDA1544D5AB00DBC96B /* NLTHGlobalSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084DCC1544D5AB00DBC96B /* NLTHGlobalSettings.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084DDB1544D5AB00DBC96B /* NLTHTTPDataStubResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084DCE1544D5AB00DBC96B /* NLTHTTPDataStubResponse.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -43,27 +43,27 @@
 		57084E301544D92E00DBC96B /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 57084E251544D92E00DBC96B /* README.txt */; };
 		57084E321544DC2C00DBC96B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57084E311544DC2C00DBC96B /* CFNetwork.framework */; };
 		57084E341544DC7900DBC96B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57084E331544DC7900DBC96B /* Security.framework */; };
-		57084E4B1544DF9100DBC96B /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E371544DF9000DBC96B /* AFHTTPClient.m */; };
+		57084E4B1544DF9100DBC96B /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E371544DF9000DBC96B /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E4C1544DF9100DBC96B /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E371544DF9000DBC96B /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57084E4D1544DF9100DBC96B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E391544DF9000DBC96B /* AFHTTPRequestOperation.m */; };
+		57084E4D1544DF9100DBC96B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E391544DF9000DBC96B /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E4E1544DF9100DBC96B /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E391544DF9000DBC96B /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57084E4F1544DF9100DBC96B /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E3B1544DF9000DBC96B /* AFImageRequestOperation.m */; };
+		57084E4F1544DF9100DBC96B /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E3B1544DF9000DBC96B /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E501544DF9100DBC96B /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E3B1544DF9000DBC96B /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57084E511544DF9100DBC96B /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E3D1544DF9000DBC96B /* AFJSONRequestOperation.m */; };
+		57084E511544DF9100DBC96B /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E3D1544DF9000DBC96B /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E521544DF9100DBC96B /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E3D1544DF9000DBC96B /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57084E531544DF9100DBC96B /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E3F1544DF9000DBC96B /* AFJSONUtilities.m */; };
+		57084E531544DF9100DBC96B /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E3F1544DF9000DBC96B /* AFJSONUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E541544DF9100DBC96B /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E3F1544DF9000DBC96B /* AFJSONUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57084E551544DF9100DBC96B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E411544DF9000DBC96B /* AFNetworkActivityIndicatorManager.m */; };
+		57084E551544DF9100DBC96B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E411544DF9000DBC96B /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E561544DF9100DBC96B /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E411544DF9000DBC96B /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57084E571544DF9100DBC96B /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E441544DF9000DBC96B /* AFPropertyListRequestOperation.m */; };
+		57084E571544DF9100DBC96B /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E441544DF9000DBC96B /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E581544DF9100DBC96B /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E441544DF9000DBC96B /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57084E591544DF9100DBC96B /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E461544DF9000DBC96B /* AFURLConnectionOperation.m */; };
+		57084E591544DF9100DBC96B /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E461544DF9000DBC96B /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E5A1544DF9100DBC96B /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E461544DF9000DBC96B /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57084E5B1544DF9100DBC96B /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E481544DF9000DBC96B /* AFXMLRequestOperation.m */; };
+		57084E5B1544DF9100DBC96B /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E481544DF9000DBC96B /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E5C1544DF9100DBC96B /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E481544DF9000DBC96B /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57084E5D1544DF9100DBC96B /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E4A1544DF9000DBC96B /* UIImageView+AFNetworking.m */; };
+		57084E5D1544DF9100DBC96B /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E4A1544DF9000DBC96B /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E5E1544DF9100DBC96B /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E4A1544DF9000DBC96B /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		57084E621544EEE400DBC96B /* CoderwallUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E611544EEE400DBC96B /* CoderwallUserProfile.m */; };
+		57084E621544EEE400DBC96B /* CoderwallUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E611544EEE400DBC96B /* CoderwallUserProfile.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57084E631544EEE400DBC96B /* CoderwallUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 57084E611544EEE400DBC96B /* CoderwallUserProfile.m */; };
 		57084E6615458E8700DBC96B /* slightair.json in Resources */ = {isa = PBXBuildFile; fileRef = 57084E6515458E8700DBC96B /* slightair.json */; };
 		571BB95C1544A6D1009D1475 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571BB95B1544A6D1009D1475 /* UIKit.framework */; };
@@ -88,7 +88,7 @@
 		571BB99A1544A7A3009D1475 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 571BB9981544A7A3009D1475 /* InfoPlist.strings */; };
 		571BB99C1544A7A3009D1475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 571BB99B1544A7A3009D1475 /* main.m */; };
 		571BB9A51544A8FF009D1475 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 571BB9A41544A8FF009D1475 /* GHUnitIOS.framework */; };
-		57FD48431546469000A86733 /* CoderwallBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48421546469000A86733 /* CoderwallBadge.m */; };
+		57FD48431546469000A86733 /* CoderwallBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48421546469000A86733 /* CoderwallBadge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		57FD48441546469000A86733 /* CoderwallBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48421546469000A86733 /* CoderwallBadge.m */; };
 		57FD48481546588500A86733 /* CoderwallUserProfileTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48471546588500A86733 /* CoderwallUserProfileTest.m */; };
 		57FD484B1546589D00A86733 /* CoderwallBadgeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD484A1546589D00A86733 /* CoderwallBadgeTest.m */; };
