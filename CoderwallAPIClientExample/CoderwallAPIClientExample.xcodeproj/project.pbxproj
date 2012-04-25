@@ -85,6 +85,7 @@
 		57FD48AB1547BDDF00A86733 /* CCBadgeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FD48AA1547BDDF00A86733 /* CCBadgeListViewController.m */; };
 		57FD48AD154869B200A86733 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FD48AC154869B200A86733 /* placeholder.png */; };
 		57FD48AE154869B200A86733 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FD48AC154869B200A86733 /* placeholder.png */; };
+		57FD48B015486BB900A86733 /* hogehogehoge.json in Resources */ = {isa = PBXBuildFile; fileRef = 57FD48AF15486BB900A86733 /* hogehogehoge.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -206,6 +207,7 @@
 		57FD48A91547BDDE00A86733 /* CCBadgeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBadgeListViewController.h; sourceTree = "<group>"; };
 		57FD48AA1547BDDF00A86733 /* CCBadgeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBadgeListViewController.m; sourceTree = "<group>"; };
 		57FD48AC154869B200A86733 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		57FD48AF15486BB900A86733 /* hogehogehoge.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hogehogehoge.json; path = CoderwallAPIClientExampleTests/TestResources/hogehogehoge.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				57084E6515458E8700DBC96B /* slightair.json */,
+				57FD48AF15486BB900A86733 /* hogehogehoge.json */,
 			);
 			name = TestResources;
 			path = testResources;
@@ -569,6 +572,7 @@
 				57084E301544D92E00DBC96B /* README.txt in Resources */,
 				57084E6615458E8700DBC96B /* slightair.json in Resources */,
 				57FD48AE154869B200A86733 /* placeholder.png in Resources */,
+				57FD48B015486BB900A86733 /* hogehogehoge.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -54,6 +54,7 @@
     stubResponse.httpHeaders = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"application/json; charset=utf-8", @"Content-Type",
                                 nil];
+    stubResponse.statusCode = 200;
     [stubServer_ addStubResponse:stubResponse];
     
     NSURL *stubServerBaseURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:%d", kStubServerPort]];
@@ -81,6 +82,33 @@
                     }
                        failure:^(NSError *error){
                            [self notify:kGHUnitWaitStatusFailure];
+                       }];
+    [self waitForStatus:kGHUnitWaitStatusSuccess timeout:5.0f];
+}
+
+- (void)testProfileAPIFailure
+{
+    NLTHTTPStubResponse *stubResponse = [NLTHTTPStubResponse httpFileResponse];
+    stubResponse.path = @"/hogehogehoge.json";
+    stubResponse.filepath = [[NSBundle bundleForClass:[self class]] pathForResource:@"hogehogehoge" ofType:@"json"];
+    stubResponse.httpHeaders = [NSDictionary dictionaryWithObjectsAndKeys:
+                                @"application/json; charset=utf-8", @"Content-Type",
+                                nil];
+    stubResponse.statusCode = 404;
+    [stubServer_ addStubResponse:stubResponse];
+    
+    NSURL *stubServerBaseURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:%d", kStubServerPort]];
+    CoderwallAPIClient *client = (CoderwallAPIClient *)[CoderwallAPIClient clientWithBaseURL:stubServerBaseURL];
+    
+    [self prepare];
+    [client profileForUsername:@"hogehogehoge"
+                    completion:^(CoderwallUserProfile *profile){
+                        [self notify:kGHUnitWaitStatusFailure];
+                    }
+                       failure:^(NSError *error){
+                           GHAssertNotNil(error, @"should return error");
+                           
+                           [self notify:kGHUnitWaitStatusSuccess];
                        }];
     [self waitForStatus:kGHUnitWaitStatusSuccess timeout:5.0f];
 }
