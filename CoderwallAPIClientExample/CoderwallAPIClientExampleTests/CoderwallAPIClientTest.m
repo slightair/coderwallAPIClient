@@ -8,7 +8,6 @@
 
 #define kStubServerPort 12345
 
-#import <objc/objc-runtime.h>
 #import "NLTHTTPStubServer.h"
 #import "CoderwallAPIClientTest.h"
 #import "CoderwallAPIClient.h"
@@ -16,6 +15,7 @@
 @implementation CoderwallAPIClientTest
 {
     NLTHTTPStubServer *stubServer_;
+    NSURL *stubServerBaseURL_;
 }
 
 - (void)setUpClass
@@ -24,6 +24,8 @@
     
     stubServer_ = [NLTHTTPStubServer stubServer];
     [stubServer_ startServer];
+    
+    stubServerBaseURL_ = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:%d", kStubServerPort]];
 }
 
 - (void)tearDownClass {
@@ -48,17 +50,10 @@
 
 - (void)testProfileAPISuccess
 {
-    NLTHTTPStubResponse *stubResponse = [NLTHTTPStubResponse httpFileResponse];
-    stubResponse.path = @"/slightair.json";
-    stubResponse.filepath = [[NSBundle bundleForClass:[self class]] pathForResource:@"slightair" ofType:@"json"];
-    stubResponse.httpHeaders = [NSDictionary dictionaryWithObjectsAndKeys:
-                                @"application/json; charset=utf-8", @"Content-Type",
-                                nil];
-    stubResponse.statusCode = 200;
-    [stubServer_ addStubResponse:stubResponse];
+    NSData *successJSON = [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"slightair" ofType:@"json"]];
+    [[[[stubServer_ stub] forPath:@"/slightair.json"] andJSONResponse:successJSON] andStatusCode:200];
     
-    NSURL *stubServerBaseURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:%d", kStubServerPort]];
-    CoderwallAPIClient *client = (CoderwallAPIClient *)[CoderwallAPIClient clientWithBaseURL:stubServerBaseURL];
+    CoderwallAPIClient *client = (CoderwallAPIClient *)[CoderwallAPIClient clientWithBaseURL:stubServerBaseURL_];
     
     [self prepare];
     [client profileForUsername:@"slightair"
@@ -88,17 +83,10 @@
 
 - (void)testProfileAPIFailure
 {
-    NLTHTTPStubResponse *stubResponse = [NLTHTTPStubResponse httpFileResponse];
-    stubResponse.path = @"/hogehogehoge.json";
-    stubResponse.filepath = [[NSBundle bundleForClass:[self class]] pathForResource:@"hogehogehoge" ofType:@"json"];
-    stubResponse.httpHeaders = [NSDictionary dictionaryWithObjectsAndKeys:
-                                @"application/json; charset=utf-8", @"Content-Type",
-                                nil];
-    stubResponse.statusCode = 404;
-    [stubServer_ addStubResponse:stubResponse];
+    NSData *failureJSON = [NSData dataWithContentsOfFile:[[NSBundle bundleForClass:[self class]] pathForResource:@"slightair" ofType:@"json"]];
+    [[[[stubServer_ stub] forPath:@"/hogehogehoge.json"] andJSONResponse:failureJSON] andStatusCode:404];
     
-    NSURL *stubServerBaseURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:%d", kStubServerPort]];
-    CoderwallAPIClient *client = (CoderwallAPIClient *)[CoderwallAPIClient clientWithBaseURL:stubServerBaseURL];
+    CoderwallAPIClient *client = (CoderwallAPIClient *)[CoderwallAPIClient clientWithBaseURL:stubServerBaseURL_];
     
     [self prepare];
     [client profileForUsername:@"hogehogehoge"
